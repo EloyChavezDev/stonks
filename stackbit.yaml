@@ -1,0 +1,130 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - _defaultTheme/2019-06-08-markdown-and-html.md
+      - _defaultTheme/2019-06-09-grape-theme-style.md
+      - _posts/2021-09-13-Liga-Creatividad-1.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: Subtitle
+      - type: string
+        name: author
+        label: Author
+      - type: boolean
+        name: comments
+        label: Comments
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+  default_theme:
+    type: page
+    label: Default Theme
+    folder: _defaultTheme
+    match:
+      - READMEold.md
+    fields: []
+  page_2:
+    type: page
+    label: Page 2
+    match: '*'
+    exclude:
+      - estus-flask.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: boolean
+        name: hide
+        label: Hide
+  page_3:
+    type: page
+    label: Page 3
+    match: '*'
+    exclude:
+      - 404.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: boolean
+        name: hide
+        label: Hide
+  projects:
+    type: data
+    label: Projects
+    file: projects.yml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: object
+          name: project
+          label: Project
+          fields:
+            - type: boolean
+              name: print
+              label: Print
+            - type: boolean
+              name: modal
+              label: Modal
+            - type: string
+              name: url
+              label: Url
+            - type: image
+              name: image
+              label: Image
+            - type: string
+              name: date
+              label: Date
+            - type: string
+              name: title
+              label: Title
+            - type: markdown
+              name: summary
+              label: Summary
+            - type: string
+              name: description
+              label: Description
+            - type: list
+              name: contents
+              label: Contents
+              items:
+                type: object
+                fields:
+                  - type: string
+                    name: title
+                    label: Title
+                  - type: image
+                    name: image
+                    label: Image
+                  - type: markdown
+                    name: description
+                    label: Description

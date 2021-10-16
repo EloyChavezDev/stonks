@@ -1,0 +1,271 @@
+*{
+	-webkit-text-size-adjust:none;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Noto Sans','Sans-serif';
+	box-sizing: border-box;
+}
+html, body{height:100%;}
+body{-webkit-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0); background-color: rgba(0,0,0,0.87);}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	word-break: keep-all;
+	font-size: 1.05rem;
+    line-height: 1.5em;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+html, body {
+	color: $text;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
+}
+h1 {
+	font-size : 1.8rem;
+}
+h2 {
+	font-size : 1.6rem;
+}
+h3 {
+	font-size : 1.4rem;
+}
+h4 {
+	font-size : 1.3rem;
+}
+h5 {
+	font-size : 1.2rem;
+}
+h6 {
+	font-size : 1.05rem;
+}
+p{
+	margin: 5px 0;
+}
+@media (max-width: 576px){
+	h1 {
+		font-size : 1.6rem;
+	}
+	h2 {
+		font-size : 1.4rem;
+	}
+	h3 {
+		font-size : 1.3rem;
+	}
+	h4 {
+		font-size : 1.2rem;
+	}
+	h5 {
+		font-size : 1.05rem;
+	}
+	h6 {
+		font-size : 1rem;
+	}
+	p{
+		font-size : 0.9rem;
+	}
+}
+ol, ul {
+	li { font-size: 15px; }
+}
+em {
+	font-size: 15px;
+}
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none; 
+	color: $text;
+}
+
+.link {
+	color: $theme-color !important;
+}
+
+.container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.row{
+	margin : auto 0px;
+}
+.display-none{
+	display: none;
+}
+.highlighter-rouge {
+    font-size: 0.9rem;
+    color: $simple_codeBG;
+    background-color: $simple_code;
+	padding: 0px 5px;
+	border-radius: 5px;
+	font-weight: 900;
+	word-spacing: 9px;
+}
+
+
+.tag {
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right : 3px;
+	padding: 1px 15px 0px;
+    border-radius: 20px;
+    color: #fff;
+	font-weight: 600;
+	font-size: 0.85rem;
+	line-height: 35px;
+	letter-spacing: -0.03rem;
+	background-color: $theme-dark2;
+}
+
+.tag:hover {
+	background-color: $theme-dark !important;
+}
+#icons{
+	margin-top: 25px;
+	li { 
+		display: inline-block; 
+	}
+	i{
+		width: 40px;
+		height: 40px;
+		background-color: $theme-dark2;
+		color : rgba(255, 255, 255, 0.76);
+		border-radius: 50%;
+		font-size : 1.3rem;
+		line-height: 42px;
+		margin-right : 10px;
+		text-align: center;
+	}
+	i:hover {
+		background-color: $theme-dark;
+		color : #fff;
+	}
+}
+#error404{
+	@extend %page-padding;
+	margin-top : 200px;
+	text-align: center;
+
+	.return-btn {
+		color : rgb(248, 248, 248);
+		p {
+			display: inline-block;
+			padding: 10px 30px;
+			margin-top: 30px;
+			border-radius: 15px;
+			font-weight: 600;
+			background-color: $theme-color ;
+		}
+		}
+	.return-btn:hover{ 
+		p{
+			background-color: $theme-dark2;
+			color : #fff;
+		}
+	}
+
+}
+
+#estus-flask{
+	.return-btn {
+		color : rgb(248, 248, 248);
+		p {
+			display: inline-block;
+			padding: 10px 30px;
+			margin-top: 30px;
+			border-radius: 15px;
+			font-weight: 600;
+			background-color: $theme-color ;
+		}
+		}
+	.return-btn:hover{ 
+		p{
+			background-color: $theme-dark2;
+			color : #fff;
+		}
+	}
+}
+
+.blinking-cursor {
+	margin-left: 1px;
+	font-weight: 600;
+	font-size: 30px;
+	color: #2E3D48;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+  }
+  
+@keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: $text;
+	}
+  }
+  
+@-moz-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: $text;
+	}
+  }
+  
+@-webkit-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: $text;
+	}
+  }
+  
+@-ms-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: $text;
+	}
+  }
+  
+@-o-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: $text;
+	}
+  }
+
+  // pseudocode.js
+  .ps-algorithm {
+	color: white;
+	border-top: 2px solid $text !important;
+	border-bottom: 2px solid $text !important;
+  }
+  
+  .with-caption > .ps-line {
+	border-bottom: 2px solid $text !important;
+  }

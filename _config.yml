@@ -1,0 +1,41 @@
+baseurl: ''
+url: ''
+theme_settings:
+  title: Eloy_dev
+  favicon: assets/favicon.ico
+  blog: '> Eloy_Dev-Blog '
+  profile:
+    image: assets/img/smile.png
+    username: Eloy Chavez
+    description: Developer student in Platzi.
+    experience:
+      - start: 03 / 2020
+        end: Until now
+        experience: 'UCA, Systems Assistant'
+    skills:
+      - skill: Google Cloud Platform
+        value: 12
+      - skill: JS Challenge
+        value: 60
+  icons:
+    email: laneloychavez@gmail.com
+    linkedin: 'https://www.linkedin.com/in/jesus-eloy-chavez-gonzalez-602002213/'
+    github: jeloychavez
+    gitlab: null
+    bitbucket: null
+    google_plus: null
+    twitter: StonksCompany
+    youtube: null
+    facebook: null
+    instagram: null
+  disqus_shortname: eloy-dev
+paginate: 5
+paginate_path: 'blog/page:num'
+sass:
+  sass_dir: _sass
+  style: ':compressed'
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+bootstrap:
+  assets: true
